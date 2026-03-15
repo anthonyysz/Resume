@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resume</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    body { font-family: 'DM Sans', sans-serif; }
+    h1, h2, h3 { font-family: 'DM Serif Display', serif; }
+    .section-title {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.5em;
+      text-transform: uppercase;
+      color: #6B7280;
+    }
+    .divider {
+      border: none;
+      border-top: 1px solid #D3D3D3;
+      margin: 0.35rem 0 0.6rem 0;
+    }
+    .left-divider {
+      border: none;
+      border-top: 1px solid rgba(255,255,255,0.2);
+      margin: 0.35rem 0 0.6rem 0;
+    }
+    .contact-icon {
+      width: 10px;
+      height: 10px;
+      flex-shrink: 0;
+    }
+    @media print {
+      body { margin: 0; padding: 0; background: white; }
+      .page { box-shadow: none !important; margin: 0px !important; }
+      * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+      @page { size: 8.5in 11in; margin: 0px; }
+    }
+  </style>
+</head>
+<body class="flex bg-gray-300 justify-center items-start min-h-screen">
+ 
+  <!-- 8.5x11 page container -->
+  <div class="page bg-white shadow-2xl flex" style="width:816px; height:1056px; overflow:hidden;">
+ 
+    <!-- Left Column --> <!-- Setting the left column to take up about 30% of the container-->
+    <div class="flex flex-col bg-slate-800 text-white flex-shrink-0" style="width:245px; height:1056px; padding: 2rem 1.25rem;">
+ 
+      <!-- Name and title -->
+      <div class="mb-4">
+        <h1 class="text-2xl leading-tight text-white">Anthony Szabo</h1>
+        <p class="text-xs text-slate-300 font-normal mt-1">Computer Scientist / Data Scientist</p>
+      </div>
+ 
+      <!-- Links -->
+      <div class="mb-5">
+        <p class="section-title" style="color: #D3D3D3;">Contact</p>
+        <hr class="left-divider"/>
+        <ul class="space-y-1.5 text-xs text-slate-300">
+          <li class="flex items-center gap-2">
+            <i class="fa-brands fa-github"></i>
+            <a href="https://github.com/anthonyysz" class="hover:text-white transition-colors">GitHub</a>
+          </li>
+          <li class="flex items-center gap-2">
+            <i class="fa-solid fa-globe"></i>
+            <a href="https://anthonyysz.github.io/portfolio/" class="hover:text-white transition-colors">Portfolio Website</a>
+          </li>
+          <li class="flex items-center gap-2">
+            <i class="fa-brands fa-linkedin"></i>
+            <a href="https://www.linkedin.com/in/anthony-szabo/" class="hover:text-white transition-colors">LinkedIn</a>
+          </li>
+          <li class="flex items-center gap-2">
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:anthony_szabo@hotmail.com" class="hover:text-white transition-colors">anthony_szabo@hotmail.com</a>
+          </li>
+        </ul>
+      </div>
+ 
+      <!-- About Me -->
+      <div class="mb-5">
+        <p class="section-title" style="color: #D3D3D3;">About Me</p>
+        <hr class="left-divider"/>
+        <p class="text-xs text-slate-300 font-light leading-relaxed">
+          My name is Anthony and I am a graduating Computer Science student. 
+          I am eager to work and demonstrate all that I've learned through academia thus far.
+          I highly value my ability to learn new things and solve complex problems. 
+          My thirst for knowledge and tenacity will prove valuable to any team in any role. 
+        </p>
+      </div>
+ 
+      <!-- Languages -->
+      <div class="mb-5">
+        <p class="section-title" style="color: #D3D3D3;">Languages</p>
+        <hr class="left-divider"/>
+        <ul class="text-xs text-slate-300 space-y-1">
+          <li>— Python</li>
+          <li>— Java</li>
+          <li>— SQL</li>
+          <li>— C++</li>
+          <li>— Lua</li>
+        </ul>
+      </div>
+ 
+      <!-- Platforms / Applications -->
+      <div class="mb-5">
+        <p class="section-title" style="color: #D3D3D3;">Platforms and Applications</p>
+        <hr class="left-divider"/>
+        <ul class="text-xs text-slate-300 space-y-1">
+          <li>— Jupyter</li>
+          <li>— Git</li>
+          <li>— Visual Studio / VS Code</li>
+          <li>— IntelliJ</li>
+          <li>— CoppeliaSim Edu</li>
+        </ul>
+      </div>
+ 
+      <!-- ML Tools -->
+      <div class="mb-5">
+        <p class="section-title" style="color: #D3D3D3;">ML Tools</p>
+        <hr class="left-divider"/>
+        <ul class="text-xs text-slate-300 space-y-1">
+          <li>— Keras</li>
+          <li>— Tensorflow</li>
+          <li>— Scikit-learn</li>
+        </ul>
+      </div>
+ 
+      <!-- Libraries -->
+      <div class="mb-5">
+        <p class="section-title" style="color: #D3D3D3;">Libraries</p>
+        <hr class="left-divider"/>
+        <ul class="text-xs text-slate-300 space-y-1">
+          <li>— Pandas</li>
+          <li>— Numpy</li>
+          <li>— Matplotlib</li>
+          <li>— Seaborn</li>
+        </ul>
+      </div>
+ 
+    </div>
+    <!-- END LEFT COLUMN -->
+ 
+    <!-- RIGHT COLUMN  -->
+    <div class="flex flex-col flex-1" style="padding: 2rem 1.5rem; height:1056px; overflow:hidden;">
+ 
+      <!-- EDUCATION -->
+      <div class="mb-2">
+        <p class="section-title">Education</p>
+        <hr class="divider"/>
+ 
+        <!-- Institution 1 -->
+        <div class="mb-2">
+          <div class="flex justify-between items-baseline">
+            <h3 class="text-sm font-semibold text-gray-800" style="font-family:'DM Serif Display',serif;">Western Governor's University</h3>
+            <span class="text-xs text-gray-400">June 2026</span>
+          </div>
+          <p class="text-xs text-gray-500 mb-1">Bachelor of Science - BS, Computer Science</p>
+          <ul class="list-disc list-outside ml-4 text-xs text-gray-600 space-y-0.5">
+            <li>123 Credits completed at an accelerated rate with material including object-oriented program using Java, SQL data manipulation, software development lifecycle planning, and more</li>
+            <li>Experience with many new languages, libraries, frameworks, and environments in real-world problem-solving scenarios</li>
+          </ul>
+        </div>
+ 
+        <!-- Institution 2 -->
+        <div class="mb-2">
+          <div class="flex justify-between items-baseline">
+            <h3 class="text-sm font-semibold text-gray-800" style="font-family:'DM Serif Display',serif;">Springboard</h3>
+            <span class="text-xs text-gray-400">Month Year</span>
+          </div>
+          <p class="text-xs text-gray-500 mb-1">Certificate of Completion, Data Science Career Track</p>
+          <ul class="list-disc list-outside ml-4 text-xs text-gray-600 space-y-0.5">
+            <li>550+ hours of curriculum related to Python, SQL, Statistical Analysis, Data Visualization and Data Communication, and Machine Learning involving Time Series Analysis and Neural Networks</li>
+            <li>Expert mentor oversight on 2 in-depth capstone projects</li>
+          </ul>
+        </div>
+      </div>
+      <!-- END EDUCATION -->
+ 
+      <!-- EXPERIENCE -->
+      <div class="mb-2">
+        <p class="section-title">Experience</p>
+        <hr class="divider"/>
+ 
+        <!-- Job 1 -->
+        <div class="mb-2">
+          <div class="flex justify-between items-baseline">
+            <h3 class="text-sm font-semibold text-gray-800" style="font-family:'DM Serif Display',serif;">Vyne Restaurant and Bar</h3>
+            <span class="text-xs text-gray-400">November 2025 – Present</span>
+          </div>
+          <p class="text-xs text-gray-500 mb-1">Waiter / Food Runner</p>
+          <ul class="list-disc list-outside ml-4 text-xs text-gray-600 space-y-0.5">
+            <li>Worked full time while in school to support myself and my education</li>
+            <li>Fast paced/high stress environment</li>
+            <li>Demonstrated elevated service style to align with more upscale environment</li>
+          </ul>
+        </div>
+ 
+        <!-- Job 2 -->
+        <div class="mb-2">
+          <div class="flex justify-between items-baseline">
+            <h3 class="text-sm font-semibold text-gray-800" style="font-family:'DM Serif Display',serif;">Olive Garden</h3>
+            <span class="text-xs text-gray-400">April 2024 – December 2025</span>
+          </div>
+          <p class="text-xs text-gray-500 mb-1">Job Title</p>
+          <ul class="list-disc list-outside ml-4 text-xs text-gray-600 space-y-0.5">
+            <li>Worked full time while in school to support myself and my education</li>
+            <li>Fast paced/high stress environment</li>
+            <li>Trusted to undertake duties deemed most challenging</li>
+          </ul>
+        </div>
+ 
+        <!-- Job 3 -->
+        <div class="mb-2">
+          <div class="flex justify-between items-baseline">
+            <h3 class="text-sm font-semibold text-gray-800" style="font-family:'DM Serif Display',serif;">Miss Lizzy Thyroid Supplements</h3>
+            <span class="text-xs text-gray-400">May 2022 – September 2022</span>
+          </div>
+          <p class="text-xs text-gray-500 mb-1">Data Analyst</p>
+          <ul class="list-disc list-outside ml-4 text-xs text-gray-600 space-y-0.5">
+            <li>Used Google Analytics and Data Studio to track customer journey from advertisement to sale</li>
+            <li>Used Python and Data Science method to explore, model, and communicate ideas for maximizing customer lifetime value</li>
+          </ul>
+        </div>
+      </div>
+      <!-- END EXPERIENCE -->
+ 
+      <!-- PROJECTS -->
+      <div>
+        <p class="section-title">Projects</p>
+        <hr class="divider"/>
+ 
+        <!-- Project 1 -->
+        <div class="mb-2">
+          <div class="flex justify-between items-baseline">
+            <h3 class="text-sm font-semibold text-gray-800" style="font-family:'DM Serif Display',serif;">Portfolio Website</h3>
+            <div class="flex gap-3">
+              <a href="https://anthonyysz.github.io/portfolio/" class="text-xs text-gray-500 hover:text-gray-800 transition-colors">Demo</a>
+              <a href="https://github.com/anthonyysz/portfolio" class="text-xs text-slate-500 hover:text-slate-700 transition-colors">GitHub</a>
+            </div>
+          </div>
+          <p class="text-xs text-gray-600 leading-relaxed mt-0.5">
+            This portfolio website is my first project using React.js with tailwindcss. 
+            With little front-end experience, I thought the popular library/framework pair would be a great place to start. 
+            Through my learning, I hosted my site on GitHub pages with some fun features, such as snap scroll, dynamic routing, and a screen size-dependent styling.
+          </p>
+        </div>
+ 
+        <!-- Project 2 -->
+        <div class="mb-2">
+          <div class="flex justify-between items-baseline">
+            <h3 class="text-sm font-semibold text-gray-800" style="font-family:'DM Serif Display',serif;">Delivery Truck Route Optimization</h3>
+            <a href="https://github.com/anthonyysz/Delivery-Truck-Route-Optimization" class="text-xs text-slate-500 hover:text-slate-700 transition-colors">GitHub</a>
+          </div>
+          <p class="text-xs text-gray-600 leading-relaxed mt-0.5">
+            This program uses python, taking package destinations and the distance between all of the destinations and determines an optimal route.
+            This program also accounts for multiple trucks, certain delivery timelines, and special cases all while providing you with where each package is at any time of day.
+          </p>
+        </div>
+ 
+        <!-- Project 3 -->
+        <div class="mb-2">
+          <div class="flex justify-between items-baseline">
+            <h3 class="text-sm font-semibold text-gray-800" style="font-family:'DM Serif Display',serif;">GDP Time Series Analysis</h3>
+            <a href="https://github.com/anthonyysz/GDP-Time-Series-Analysis" class="text-xs text-slate-500 hover:text-slate-700 transition-colors">GitHub</a>
+          </div>
+          <p class="text-xs text-gray-600 leading-relaxed mt-0.5">
+            I read GDP per Capita and population data from 1952-2019 to try to predict the population and GDP per capita in 2030.
+            I tried a Support Vector Regression mode, Linear Regression model, ARIMA model, and XGBoost regressor, using the latter 2 for my predictions.
+          </p>
+        </div>
+      </div>
+      <!-- END PROJECTS -->
+ 
+    </div>
+    <!-- END RIGHT COLUMN -->
+ 
+  </div>
+  <!-- END PAGE -->
+ 
+</body>
+</html>
+ 
