@@ -26,12 +26,15 @@
     .left-divider {
       border: none;
       border-top: 1px solid rgba(255,255,255,0.2);
-      margin: 0.35rem 0 0.5rem 0;
+      margin: 0.35rem 0 0.3rem 0;
     }
     .contact-icon {
       width: 10px;
       height: 10px;
       flex-shrink: 0;
+    }
+    .list-item {
+      margin-bottom: 2px;
     }
     @media print {
       body { margin: 0; padding: 0; background: white; }
@@ -50,14 +53,14 @@
     <div class="flex flex-col bg-slate-800 text-white flex-shrink-0" style="width:245px; height:1056px; padding: 2.5rem 1.5rem 2.5rem 2rem;">
  
       <!-- Name and title -->
-      <div class="mb-4">
+      <div class="mb-3">
         <h1 class="text-2xl leading-tight text-white">Anthony Szabo</h1>
         <p class="text-xs text-slate-300 font-normal mt-1">Computer Scientist / Data Scientist</p>
-        <p class="text-xs text-slate-300 font-normal mt-1">Located in Central CT</p>
+        <p class="text-xs text-slate-300 font-normal mt-1">Located in Central Connecticut</p>
       </div>
  
       <!-- Links -->
-      <div class="mb-4">
+      <div class="mb-2">
         <p class="section-title" style="color: #D3D3D3;">Contact</p>
         <hr class="left-divider"/>
         <ul class="space-y-1.5 text-xs text-slate-300">
@@ -85,65 +88,77 @@
       </div>
  
       <!-- Languages -->
-      <div class="mb-4">
+      <div class="mb-2">
         <p class="section-title" style="color: #D3D3D3;">Languages</p>
         <hr class="left-divider"/>
-        <ul class="text-xs text-slate-300 space-y-1">
-          <li>— Python</li>
-          <li>— Java</li>
-          <li>— SQL</li>
-          <li>— C++</li>
-          <li>— Lua</li>
-          <li>— HTML</li>
+        <ul class="text-xs text-slate-300">
+          <li class="list-item">- Python</li>
+          <li class="list-item">- Java</li>
+          <li class="list-item">- SQL</li>
+          <li class="list-item">- C++</li>
+          <li class="list-item">- Lua</li>
+          <li class="list-item">- HTML</li>
         </ul>
       </div>
  
       <!-- Platforms / Applications -->
-      <div class="mb-4">
+      <div class="mb-2">
         <p class="section-title" style="color: #D3D3D3;">Platforms and Applications</p>
         <hr class="left-divider"/>
-        <ul class="text-xs text-slate-300 space-y-1">
-          <li>— Jupyter</li>
-          <li>— Git</li>
-          <li>— Visual Studio / VS Code</li>
-          <li>— IntelliJ</li>
-          <li>— CoppeliaSim Edu</li>
+        <ul class="text-xs text-slate-300">
+          <li class="list-item">- Jupyter</li>
+          <li class="list-item">- Git</li>
+          <li class="list-item">- VS Code</li>
+          <li class="list-item">- IntelliJ / Visual Studio</li>
+          <li class="list-item">- CoppeliaSim Edu</li>
+          <li class="list-item">- pgAdmin / MySQL Workbench</li>
         </ul>
       </div>
  
       <!-- ML Tools -->
-      <div class="mb-4">
+      <div class="mb-2">
         <p class="section-title" style="color: #D3D3D3;">ML Tools</p>
         <hr class="left-divider"/>
-        <ul class="text-xs text-slate-300 space-y-1">
-          <li>— Keras</li>
-          <li>— Tensorflow</li>
-          <li>— Scikit-learn</li>
+        <ul class="text-xs text-slate-300">
+          <li class="list-item">- Keras</li>
+          <li class="list-item">- Tensorflow</li>
+          <li class="list-item">- Scikit-learn</li>
         </ul>
       </div>
  
       <!-- Libraries -->
-      <div class="mb-4">
+      <div class="mb-2">
         <p class="section-title" style="color: #D3D3D3;">Libraries</p>
         <hr class="left-divider"/>
-        <ul class="text-xs text-slate-300 space-y-1">
-          <li>— Pandas</li>
-          <li>— Numpy</li>
-          <li>— Matplotlib</li>
-          <li>— Seaborn</li>
+        <ul class="text-xs text-slate-300">
+          <li class="list-item">- Pandas</li>
+          <li class="list-item">- Numpy</li>
+          <li class="list-item">- Matplotlib</li>
+          <li class="list-item">- Seaborn</li>
+        </ul>
+      </div>
+
+            <!-- AWS  Services-->
+      <div class="mb-2">
+        <p class="section-title" style="color: #D3D3D3;">AWS Services</p>
+        <hr class="left-divider"/>
+        <ul class="text-xs text-slate-300">
+          <li class="list-item">- Storage (S3, RDS)</li>
+          <li class="list-item">- CI / CD (CodePipeline, CodeBuild, CloudFront)</li>
+          <li class="list-item">- Elastic Beanstalk</li>
         </ul>
       </div>
 
       <!-- Currently Learning -->
-      <div class="mb-4">
+      <div class="mb-2">
         <p class="section-title" style="color: #D3D3D3;">Currently Learning</p>
         <hr class="left-divider"/>
-        <ul class="text-xs text-slate-300 space-y-1">
-          <li>— Cloud Technologies (AWS / Azure)</li>
-          <li>— DJango</li>
-          <li>— AI Agents</li>
-          <li>— Containerization (Docker)</li>
-          <li>— Web Hosting (Apache / NGINX)</li>
+        <ul class="text-xs text-slate-300">
+          <li class="list-item">- AWS</li>
+          <li class="list-item">- DJango / FastAPI</li>
+          <li class="list-item">- AI Agents</li>
+          <li class="list-item">- Containerization (Docker)</li>
+          <li class="list-item">- Web Hosting (Apache / NGINX)</li>
         </ul>
       </div>
  
@@ -257,13 +272,18 @@
         <!-- Project 2 -->
         <div class="mb-2">
           <div class="flex justify-between items-baseline">
-            <h3 class="text-sm font-semibold text-gray-800 mb-1" style="font-family:'DM Serif Display',serif;">Delivery Truck Route Optimization</h3>
-            <a href="https://github.com/anthonyysz/Delivery-Truck-Route-Optimization" class="text-xs text-slate-500 hover:text-slate-700 transition-colors">GitHub</a>
+            <h3 class="text-sm font-semibold text-gray-800 mb-1" style="font-family:'DM Serif Display',serif;">Fight Result Predictor</h3>
+            <div class="flex gap-3">
+              <a href="https://fightresultpredictor.xyz/" class="text-xs text-gray-500 hover:text-gray-800 transition-colors">Demo</a>
+              <a href="https://github.com/anthonyysz/Fight-Result-Predictor" class="text-xs text-slate-500 hover:text-slate-700 transition-colors">GitHub</a>
+            </div>
           </div>
           <ul class="list-disc list-outside ml-4 text-xs text-gray-600 space-y-0.5">
-            <li>Iterated through datasets and find optimal truck loading and package delivery order</li>
-            <li>Used python to write functions for the program and for the menu screen</li>
-            <li>Followed business plan and delivered a working product</li>
+            <li>Used data science method to clean, explore, and analyze existing fight data</li>
+            <li>Created backtesting program to fine-tune parameters for machine learning models</li>
+            <li>Used Python to program data scrapers, loaders, and predictors in a FastAPI back end</li>
+            <li>Stored all data in a fully integrated, RDS stored PostgreSQL back end</li>
+            <li>Created React front end and deployed site using AWS</li>
           </ul>
         </div>
  
